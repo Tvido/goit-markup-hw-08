@@ -433,6 +433,10 @@ img {
   margin-right: 10px;
 }
 
+.team-item:  {
+  margin-bottom: 60px;
+}
+
 .social-icons-link {
   display: flex;
   justify-content: center;
@@ -496,7 +500,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:last-child {
+.team-item:nth-last-child() {
   margin-right: 0;
 }
 
@@ -625,6 +629,14 @@ img {
 .clients-icons-link:hover,
 .clients-icons-link:focus {
   border-color: var(--accent-cl);
+}
+
+.clients-icons-item:nth-last-child() {
+  margin-right: 0;
+}
+
+.clients-icons-item:nth-last-child() {
+  margin-bottom: 60;
 }
 
 /****************** footer 
