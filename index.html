@@ -117,14 +117,14 @@
 
         <li class="work-item">
           <img src="./images/img(1).jpg" alt="смартфон в руках" width="370" />
-           <div class="work-overlay">
+          <div class="work-overlay">
             <p class="work-discription">Мобильные приложения</p>
           </div>
         </li>
 
         <li class="work-item">
           <img src="./images/img(2).jpg" alt="планшет в руках" width="370" />
-           <div class="work-overlay">
+          <div class="work-overlay">
             <p class="work-discription">Дизайнерские решения</p>
           </div>
         </li>
@@ -493,6 +493,20 @@
   </div>
 
   <script src="./js/modal.js"></script>
+
+  <script>
+    (() => {
+      document
+        .querySelector('.js-speaker-form')
+        .addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`),
+          );
+        });
+    })();
+  </script>
 
 </body>
 
