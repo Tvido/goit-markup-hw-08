@@ -818,7 +818,8 @@ img {
 }
 
 .backdrop-modal {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 100%;
 }
