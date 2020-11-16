@@ -14,8 +14,8 @@
 <body class="body">
 
   <!-- Шапка сайту-->
-  <header class="page-header">
-    <nav class="container main-nav">
+  <header class="page-header container">
+    <nav class="main-nav">
       <a href="index.html" class="header-logo"><span class="web">Web</span>Studio</a>
       <ul class="site-nav list">
         <li class="site-nav-item"><a href="./index.html" class="site-nav-link current">Студия</a></li>
@@ -132,7 +132,7 @@
 
     </section>
 
-    
+
     <!--Секція "Наша команда"-->
     <section class="team centered">
       <h2 class="team-title">Наша команда</h2>
@@ -329,7 +329,7 @@
     </section>
 
     <!--Секція "Клієнти"-->
-    <section class="clients container">
+    <section class="clients container centered">
       <h2 class="clients-title centered">Чем мы занимаемся</h2>
       <ul class="list clients-list">
 
@@ -381,8 +381,9 @@
         <li class="clients-icons-item">
           <a class="clients-icons-link" href="https://company.com/" target="_blank" rel="noopener noreferer"
             aria-label="company">
-            <svg class="clients-icons-svg">
-              <use href="./images/sprite.svg#icon-client6"></use>
+            <svg class="clients-icons-svg icon-client6">
+              <use href="./images/sprite.svg#icon-client6">
+              </use>
             </svg>
           </a>
         </li>
@@ -452,6 +453,18 @@
         </ul>
 
       </div>
+      
+      <div class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <form action="#" id="subscribe">
+          <input type="email" class="subscribe-mail" name="subscribe-mail" placeholder="E-mail">
+          <button type="submit" class="subscribe-btn" form="subscribe">Подписаться
+            <svg class="subscribe-svg" width="24" height="24">
+              <use href="./images/sprite.svg#send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
 
     </div>
 
@@ -469,13 +482,39 @@
           </svg>
         </button>
 
-        <form>
-          <label>
-            Почта
-            <input type="email" name="email" />
-          </label>
-        
-                  </form>
+        <form class="form js-speaker-form">
+
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <!-- <div class="form-field"> -->
+            <span class="modal-form-wrapper">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" placeholder="Иван Иваныч" autofocus />
+            </span>
+          <!-- </div> -->
+
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+          </div>
+
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+          </div>
+          <div>
+            <label class="modal-form-label" for="user-comments">Комментарий</label>
+            <textarea id="message" class="field" name="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
+        </div>
+        <input type="checkbox" class="policity-custom-checkbox" name="user-policy" value="accept-policity"
+              id="user-policy" />
+            <label class="user-policy" for="user-policy"><span class="policity-text">Соглашаюсь с рассылкой и
+                принимаю</span>
+              <span class="policity-link">
+                <a class="user-policy-link" href="">Условия договора</a>
+              </span> 
+            </label>
+              <button type="submit" class="modal-button">Отправить</button>
+        </form>
       </div>
     </div>
 
