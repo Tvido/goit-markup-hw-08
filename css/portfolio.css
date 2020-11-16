@@ -56,6 +56,9 @@ img {
 .container {
   /* outline: 3px solid red; */
   width: 1200px;
+  margin-top: 0 ;
+  margin-left: auto;
+  margin-right: auto;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -83,11 +86,25 @@ img {
   letter-spacing: 0.03em;
 }
 
+/* Утіліта */
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.drk-bg {
+  background-color: var(--dark-bg-cl);
+}
+
+/*======================== Навігація ========================*/
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
 
-/*======================== Навігація ========================*/
 .main-nav {
   display: flex;
   align-items: center;
