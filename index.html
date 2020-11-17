@@ -458,7 +458,7 @@
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <form action="#" id="subscribe">
           <input type="email" class="subscribe-mail" name="subscribe-mail" placeholder="E-mail">
-          <button type="submit" class="subscribe-btn" form="subscribe">Подписаться
+          <button type="submit" class="btn" form="subscribe">Подписаться
             <svg class="subscribe-svg" width="24" height="24">
               <use href="./images/sprite.svg#icon-footer-subscribe"></use>
             </svg>
@@ -485,26 +485,27 @@
         <form class="form js-speaker-form">
 
           <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <!-- <div class="form-field"> -->
             <span class="modal-form-wrapper">
+          <div class="form-field">    
             <label for="name">Имя</label>
-            <input type="text" name="name" id="name" placeholder="Вася" autofocus />
+            <input type="text" name="name" id="name" class="modal-input" placeholder="Вася" autofocus />
             </span>
-          <!-- </div> -->
+          </div>
 
           <div class="form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" placeholder="+380-00-000-0000" />
+            <input type="tel" name="tel" id="tel" class="modal-input" placeholder="+380-00-000-0000" />
           </div>
 
           <div class="form-field">
             <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail" placeholder="my@gmail.com" />
+            <input type="email" name="mail" id="mail" class="modal-input" placeholder="my@gmail.com" />
           </div>
           <div>
             <label class="modal-form-label" for="user-comments">Комментарий</label>
-            <textarea id="message" class="field" name="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
+            <textarea id="message" class="modal-input" class="field" name="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
         </div>
+        
         <input type="checkbox" class="policity-custom-checkbox" name="user-policy" value="accept-policity"
               id="user-policy" />
             <label class="user-policy" for="user-policy"><span class="policity-text">Соглашаюсь с рассылкой и
@@ -513,7 +514,7 @@
                 <a class="user-policy-link" href="">Условия договора</a>
               </span> 
             </label>
-              <button type="submit" class="modal-button">Отправить</button>
+              <button type="submit" class="btn">Отправить</button>
         </form>
       </div>
     </div>
