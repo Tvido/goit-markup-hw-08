@@ -865,6 +865,23 @@ img {
   border-radius: 50%;
 
   box-sizing: border-box;
+  cursor: pointer;
+  
+}
+
+.icon-modal-close {
+  fill: var(--header-logo-cl);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.modal .icon-modal-close:hover,
+.modal .icon-modal-close:focus {
+  fill: var(--accent-cl);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -876,12 +893,25 @@ img {
   padding: 20px;
 }
 
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .modal-input {
+  width: 448px;
+  height: 40px;
+
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
 
 .form .modal-input:hover,
 .form .modal-input:focus {
