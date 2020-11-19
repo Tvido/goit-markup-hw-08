@@ -929,8 +929,7 @@ img {
   resize: none;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 4px;
-  margin-bottom: 10px;
+  padding: 14px 15px;
   outline: none;
 }
 
@@ -953,25 +952,30 @@ img {
 .form-field {
   position: relative;
   display: block;
+  margin-bottom: 10px;
   /* flex-direction: column; */
 }
 
-.form-field input::placeholder {
+/* .form-field input::placeholder {
   padding-left: 33px;
-}
+} */
 
-.form-field .modal-input {
+/* .form-field .modal-input {
   padding: 14px 15px;
-}
+} */
 
-.form-field:hover .modal-icon,
+/* .form-field:hover .modal-icon,
 .form-field:focus .modal-icon {
   fill: var(--accent-cl);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .field-text {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  transform: translateY(-50%);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.15;
@@ -988,8 +992,8 @@ img {
 
 .modal-icon {
   position: absolute;
-  top: 43px;
-  left: 15px;
+  top: 21px;
+  left: 17px;
 }
 
 .submit {
@@ -1005,6 +1009,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .policity-custom-check {
