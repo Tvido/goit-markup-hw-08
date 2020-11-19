@@ -945,6 +945,10 @@ img {
   border-color: red;
 }
 
+.form {
+  padding: 30px;
+}
+
 .form-field {
   position: relative;
   display: block;
