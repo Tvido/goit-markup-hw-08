@@ -509,15 +509,18 @@
             <textarea id="message" class="modal-input" class="field" name="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
           </div>
 
-          <input type="checkbox" class="policity-custom-checkbox" name="user-policy" value="accept-policity"
-              id="user-policy" />
+          <span class="policity-custom">
+            <input type="checkbox" class="policity-custom-check" name="user-policy" value="accept-policity"
+              id="user-policy" >
             <label class="user-policy" for="user-policy"><span class="policity-text">Соглашаюсь с рассылкой и
                 принимаю</span>
               <span class="policity-link">
                 <a class="user-policy-link" href="">Условия договора</a>
               </span> 
             </label>
-              <button type="submit" class="btn">Отправить</button>
+          </span>
+
+              <button type="submit" class="btn submit">Отправить</button>
         </form>
       </div>
     </div>
