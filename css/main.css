@@ -913,10 +913,10 @@ img {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
+  width: 100%;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 
 .modal-input {
@@ -952,20 +952,13 @@ img {
 .form-field {
   position: relative;
   display: block;
-  margin-bottom: 10px;
-  /* flex-direction: column; */
+  margin-bottom: 28px;
 }
 
-/* .form-field input::placeholder {
-  padding-left: 33px;
-} */
+.form-field ~ placeholder {
+}
 
-/* .form-field .modal-input {
-  padding: 14px 15px;
-} */
-
-/* .form-field:hover .modal-icon,
-.form-field:focus .modal-icon {
+/* {
   fill: var(--accent-cl);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -983,6 +976,10 @@ img {
   color: var(--primary-text-color);
 }
 
+.form-field + [placeholder] {
+  padding-left: 25px;
+}
+
 .form .modal-input:hover,
 .form .modal-input:focus {
   border: 1px solid var(--accent-cl);
@@ -992,8 +989,12 @@ img {
 
 .modal-icon {
   position: absolute;
-  top: 21px;
-  left: 17px;
+
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+
+  display: inline-block;
 }
 
 .submit {
