@@ -884,7 +884,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .backdrop-modal {
   display: flex;
   justify-content: center;
@@ -893,9 +892,14 @@ img {
   padding: 20px;
 }
 
+.form {
+  padding: 41px;
+}
+
 .form-field {
   display: block;
   margin-bottom: 10px;
+  width: 10%;
 }
 
 .modal-input {
@@ -919,3 +923,4 @@ img {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
