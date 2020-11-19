@@ -976,10 +976,6 @@ img {
   color: var(--primary-text-color);
 }
 
-.form-field + [placeholder] {
-  padding-left: 25px;
-}
-
 .form .modal-input:hover,
 .form .modal-input:focus {
   border: 1px solid var(--accent-cl);
