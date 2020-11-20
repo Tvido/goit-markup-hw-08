@@ -1053,8 +1053,8 @@ img {
 .policity-custom-check {
   /* -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-  position: absolute; */
+  appearance: none; */
+  /* position: absolute; */
   display: inline-block;
   margin-right: 9px;
   outline: none;
