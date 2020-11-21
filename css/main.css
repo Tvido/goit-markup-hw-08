@@ -78,12 +78,10 @@ img {
 
 .drk-bg {
   background-color: var(--dark-bg-cl);
-  /* display: flex; */
 }
 
 /* Body */
 .body {
-  /* background-color: var(--background-color); */
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -246,7 +244,6 @@ img {
 
 /*======================== Hero ========================*/
 .hero {
-  /* max-width: 1600px; */
   margin-left: auto;
   margin-right: auto;
 
@@ -324,9 +321,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  /* margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0; */
 }
 
 .features-title {
@@ -359,10 +353,6 @@ img {
 .work {
   padding-bottom: 94px;
 }
-
-/* .work .list {
-  display: flex;
-} */
 
 .work-item {
   margin-right: 30px;
@@ -448,7 +438,6 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  /* background-color: var(--dark-bg-cl); */
   border-radius: 50%;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -493,7 +482,6 @@ img {
 }
 
 .team-item {
-  /* margin-right: 30px; */
   padding-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -522,7 +510,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
-  /* text-align: center; */
   color: var(--secondary-text-color);
 }
 
@@ -600,7 +587,7 @@ img {
   /* display: flex;
   justify-content: center; */
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-top: 50px;
 }
 
@@ -1028,7 +1015,6 @@ img {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 30px; */
 }
 
 .policity-custom {
@@ -1037,7 +1023,6 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .policity-custom-check:focus {
@@ -1047,9 +1032,6 @@ img {
 }
 
 .policity-custom-check {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
   /* position: absolute; */
   display: inline-block;
   margin-right: 9px;
