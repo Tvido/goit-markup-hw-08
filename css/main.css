@@ -948,12 +948,6 @@ img {
   margin-bottom: 28px;
 }
 
-.form-field .modal-icon {
-  fill: var(--accent-cl);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .field-text {
   position: absolute;
   bottom: 100%;
