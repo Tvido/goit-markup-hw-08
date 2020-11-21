@@ -1026,7 +1026,7 @@ img {
 }
 
 /* ***************** */
-.policity-custom {
+.checkbox-custom {
   position: relative;
   display: flex;
   justify-content: center;
@@ -1036,15 +1036,9 @@ img {
 .field {
   display: flex;
   align-items: center;
-  /* outline: 1px solid black; */
 }
 
 .checkbox {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute; */
-
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1073,4 +1067,8 @@ img {
   background-image: url("../images/modal-checkbox.svg");
   background-size: contain;
   background-origin: border-box;
+}
+
+.user-policy-link {
+  margin-left: 4px;
 }
