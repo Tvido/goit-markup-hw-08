@@ -1026,13 +1026,12 @@ img {
 }
 
 /* ***************** */
-/* .policity-custom {
+.policity-custom {
   position: relative;
-  flex-wrap: nowrap;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .field {
   display: flex;
@@ -1071,13 +1070,9 @@ img {
 .checkbox:checked + .icon {
   border-color: transparent;
   background-color: var(--accent-cl);
-  background-image: url("./images/modal-checkbox.svg");
+  background-image: url("../images/modal-checkbox.svg");
   background-size: contain;
   background-origin: border-box;
-}
-
-.label {
-  transition: transform 250ms linear;
 }
 
 .checkbox:checked ~ .label {
