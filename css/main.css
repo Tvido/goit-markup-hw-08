@@ -948,11 +948,11 @@ img {
   margin-bottom: 28px;
 }
 
-/* .form-field .modal-icon {
+.form-field .modal-icon {
   fill: var(--accent-cl);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
 .field-text {
   position: absolute;
@@ -1031,6 +1031,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .field {
@@ -1058,7 +1059,8 @@ img {
   border: 2px solid #2a2a2a;
   border-radius: 4px;
 
-  transition: transform 250ms linear;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .icon {
@@ -1067,6 +1069,8 @@ img {
   background-image: url("../images/modal-checkbox.svg");
   background-size: contain;
   background-origin: border-box;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-policy-link {
