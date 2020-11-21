@@ -1074,7 +1074,3 @@ img {
   background-size: contain;
   background-origin: border-box;
 }
-
-.checkbox:checked ~ .label {
-  transform: translateX(20px);
-}
