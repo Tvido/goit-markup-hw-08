@@ -585,3 +585,9 @@ img {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.btn:hover,
+.btn:focus {
+  color: var(--background-color);
+  background-color: var(--accent-cl);
+}
