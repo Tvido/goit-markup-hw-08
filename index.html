@@ -486,17 +486,17 @@
         <form action="#" name="form" class="form">
 
           <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <span class="modal-form-wrapper">
-              
-              <span class="form-field">    
-                <label class="field-text" for="name">Имя</label>
-                <input type="text" name="name" id="name" class="modal-input" placeholder="Имя Фамилия" autofocus />
-                <svg class="modal-icon" width="12" height="12">
-                  <use href="./images/sprite.svg#icon-modal-name"></use>
-                </svg>
-              </span>
+          <span class="modal-form-wrapper">
 
+            <span class="form-field">
+              <label class="field-text" for="name">Имя</label>
+              <input type="text" name="name" id="name" class="modal-input" placeholder="Имя Фамилия" autofocus />
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-modal-name"></use>
+              </svg>
             </span>
+
+          </span>
 
           <span class="form-field">
             <label class="field-text" for="tel">Телефон</label>
@@ -516,7 +516,8 @@
 
           <span class="form-field">
             <label class="field-text" for="message">Комментарий</label>
-            <textarea id="message" class="field" name="message" cols="30" rows="5" placeholder="Введите текст"></textarea>
+            <textarea id="message" class="field" name="message" cols="30" rows="5"
+              placeholder="Введите текст"></textarea>
           </span>
 
           <!-- <div class="policity-custom">
@@ -526,17 +527,24 @@
                 принимаю
                 <a class="user-policy-link" href="#">Условия договора</a>
               </label>
-            </div> -->
-
-            <div class="policity-custom">
-              <label class="policity-custom">
+              -------------------------------
+              <label class="field">
                 <input class="checkbox" type="checkbox" name="topic" value="css" />
                 <span class="icon"></span>
-                <span class="label">Соглашаюсь с рассылкой и принимаю<a class="user-policy-link" href="#">Условия договора</a></span>
+                <span class="label">CSS</span>
               </label>
-            </div>
+            </div> -->
 
-            <button type="submit" class="btn submit">Отправить</button>
+          <div class="policity-custom">
+            <label class="policity-custom">
+              <input class="checkbox" type="checkbox" name="topic" value="css" />
+              <span class="icon"></span>
+              <span class="label">Соглашаюсь с рассылкой и принимаю<a class="user-policy-link" href="#">Условия
+                  договора</a></span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn submit">Отправить</button>
         </form>
       </div>
     </div>
