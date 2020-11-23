@@ -10,7 +10,7 @@
   font-family: inherit;
   color: var(--background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background: #188ce8;
+  background: $bg-accent-cl;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -27,6 +27,6 @@
 
 .btn:hover,
 .btn:focus {
-  color: var(--background-color);
-  background-color: var(--accent-cl);
+  color: $background-cl;
+  background-color: $accent-cl;
 }
