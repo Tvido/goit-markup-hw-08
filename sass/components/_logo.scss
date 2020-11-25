@@ -5,11 +5,11 @@
   line-height: 1.19;
   text-decoration: none;
   font-style: normal;
-  color: var(--header-logo-cl);
+  color: $cl-header-logo;
 }
 
 .web {
-  color: var(--accent-cl);
+  color: $cl-accent;
 }
 
 .footer-logo {
@@ -19,9 +19,5 @@
   line-height: 1.19;
   text-decoration: none;
   font-style: normal;
-  color: var(--primary-white-color);
-}
-
-.web {
-  color: var(--accent-cl);
+  color: $cl-primary-white;
 }

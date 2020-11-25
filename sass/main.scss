@@ -1,27 +1,24 @@
 //  utils
 @import "./utils/variables";
-
 // base
 @import "./base/container";
 @import "./base/common";
 // components
 @import "./components/btn";
 @import "./components/logo";
+@import "./components/modal";
+// layout
+@import "./layout/cargo";
+@import "./layout/clients";
+@import "./layout/features";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/team";
+@import "./layout/work";
 
-// @import "./utils/is-hiden";
-// base
-// @import "./base/common";
-// components
 // @import "./components/modal-button";
 // @import "./components/title";
 // @import "./components/backdrop";
 // @import "./components/line";
 // @import "./components/close-button";
-// layout
-// @import "./layout/header";
-// @import "./layout/hero";
-// @import "./layout/qualities";
-// @import "./layout/develops";
-// @import "./layout/team";
-// @import "./layout/customers";
-// @import "./layout/footer";

@@ -1,0 +1,71 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+.clients-title {
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  /* display: flex;
+  justify-content: center; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  /* background-color: var(--primary-text-color); */
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-icons-svg {
+  /* width: 44px; */
+  height: 44px;
+  fill: var(--primary-text-color);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-client6 {
+  height: 45px;
+  width: 88px;
+}
+
+.clients-icons-link:hover .clients-icons-svg,
+.clients-icons-link:focus .clients-icons-svg {
+  fill: var(--accent-cl);
+}
+.clients-icons-link:hover,
+.clients-icons-link:focus {
+  border-color: var(--accent-cl);
+}
+
+.clients-icons-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icons-item:not(:last-child) {
+  margin-bottom: 60px;
+}

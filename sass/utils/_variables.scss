@@ -1,16 +1,20 @@
 $main-font: "Roboto", sans-serif;
 $secondary-font: "Raleway", sans-serif;
-$background-cl: #e5e5e5;
-$header-logo-cl: #000000;
-$dark-bg-cl: #2f303a;
-$primary-text-cl: #757575;
-$secondary-text-cl: #212121;
-$bg-accent-cl: #188ce8;
-$accent-cl: #2196f3;
-$primary-white-cl: #ffffff;
-$address: rgba(255, 255, 255, 0.6);
-$secondary-bg-cl: #f5f4fa;
+$cl-background: #e5e5e5;
+$cl-header-logo: #000000;
+$cl-dark-bg: #2f303a;
+$cl-primary-text: #757575;
+$cl-secondary-text: #212121;
+$cl-bg-accent: #188ce8;
+$cl-accent: #2196f3;
+$cl-primary-white: #ffffff;
+$cl-address: rgba(255, 255, 255, 0.6);
+$cl-secondary: #f5f4fa;
 
 .drk-bg {
-  background-color: $dark-bg-cl;
+  background-color: $cl-dark-bg;
+}
+
+.wide {
+  display: flex;
 }
