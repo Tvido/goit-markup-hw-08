@@ -3,19 +3,6 @@
   background-color: #2f303a;
 }
 
-.wide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container {
-  /* outline: 3px solid red; */
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .container {
   /* outline: 3px solid red; */
   width: 1200px;
@@ -87,6 +74,12 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .btn {
@@ -666,7 +659,7 @@ img {
 
 .clients-icons-svg {
   /* width: 44px; */
-  height: 44px;
+  height: 45px;
   fill: #757575;
   -webkit-transition: 250ms;
   transition: 250ms;
@@ -674,14 +667,9 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-client6 {
-  height: 45px;
-  width: 88px;
-}
-
 .clients-icons-link:hover .clients-icons-svg,
 .clients-icons-link:focus .clients-icons-svg {
-  fill: var(--accent-cl);
+  fill: #2196f3;
 }
 
 .clients-icons-link:hover,
@@ -691,9 +679,6 @@ img {
 
 .clients-icons-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.clients-icons-item:not(:last-child) {
   margin-bottom: 60px;
 }
 
@@ -1115,6 +1100,7 @@ img {
 .hero {
   margin-left: auto;
   margin-right: auto;
+  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;

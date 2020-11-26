@@ -42,20 +42,15 @@
 
 .clients-icons-svg {
   /* width: 44px; */
-  height: 44px;
+  height: 45px;
   fill: $cl-primary-text;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-client6 {
-  height: 45px;
-  width: 88px;
-}
-
 .clients-icons-link:hover .clients-icons-svg,
 .clients-icons-link:focus .clients-icons-svg {
-  fill: var(--accent-cl);
+  fill: $cl-accent;
 }
 .clients-icons-link:hover,
 .clients-icons-link:focus {
@@ -64,8 +59,5 @@
 
 .clients-icons-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.clients-icons-item:not(:last-child) {
   margin-bottom: 60px;
 }
