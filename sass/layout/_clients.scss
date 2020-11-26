@@ -8,15 +8,15 @@
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-  color: var(--secondary-text-color);
+  color: $cl-secondary-text;
 }
 .clients-title {
   margin-bottom: 50px;
 }
 
 .clients-list {
-  /* display: flex;
-  justify-content: center; */
+  // display: flex;
+  // justify-content: center;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
@@ -43,7 +43,7 @@
 .clients-icons-svg {
   /* width: 44px; */
   height: 44px;
-  fill: var(--primary-text-color);
+  fill: $cl-primary-text;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -59,7 +59,7 @@
 }
 .clients-icons-link:hover,
 .clients-icons-link:focus {
-  border-color: var(--accent-cl);
+  border-color: $cl-accent;
 }
 
 .clients-icons-item:not(:last-child) {

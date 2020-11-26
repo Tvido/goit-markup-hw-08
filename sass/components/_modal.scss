@@ -26,7 +26,7 @@
   width: 528px;
   padding: 40px;
 
-  background-color: #fff;
+  background-color: $cl-primary-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -43,7 +43,7 @@
   width: 30px;
   height: 30px;
 
-  background: #ffffff;
+  background: $cl-primary-white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
@@ -56,20 +56,20 @@
 }
 
 .icon-modal-close {
-  fill: var(--header-logo-cl);
+  fill: $cl-header-logo;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .icon-modal-close:hover,
 .modal .icon-modal-close:focus {
-  fill: var(--accent-cl);
+  fill: $cl-accent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close:hover .icon-modal-close {
-  fill: var(--accent-cl);
+  fill: $cl-accent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -93,7 +93,7 @@
   width: 100%;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: $cl-secondary-text;
   margin-bottom: 30px;
 }
 
@@ -143,12 +143,12 @@
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: $cl-primary-text;
 }
 
 .form-field .modal-input:hover,
 .form-field .modal-input:focus {
-  border: 1px solid var(--accent-cl);
+  border: 1px solid $cl-accent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -156,7 +156,7 @@
 
 .form-field:hover .modal-icon,
 .form-field:focus .modal-icon {
-  fill: var(--accent-cl);
+  fill: $cl-accent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -164,15 +164,15 @@
 
 .form-field .field:hover,
 .form-field .field:focus {
-  border: 1px solid var(--accent-cl);
+  border: 1px solid v$cl-accent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
-.field:hover ~ .modal-icon,
-.field:focus ~ .modal-icon {
-  fill: var(--accent-cl);
+.field:hover .modal-icon,
+.field:focus .modal-icon {
+  fill: $cl-accent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -180,21 +180,18 @@
 
 .form-field:hover .field,
 .form-field:focus .field {
-  fill: var(--accent-cl);
+  fill: $cl-accent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
   position: absolute;
-
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
   transition: 250ms;
-
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   display: inline-block;
 }
 
@@ -235,10 +232,8 @@
   width: 15px;
   height: 15px;
   margin-right: 5px;
-
   border: 2px solid #2a2a2a;
   border-radius: 4px;
-
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

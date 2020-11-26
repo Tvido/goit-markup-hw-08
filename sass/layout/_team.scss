@@ -11,7 +11,7 @@
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: var(--black);
+  color: $cl-primary-text;
 }
 
 .social-icons {
@@ -41,23 +41,23 @@
 .social-icons-svg {
   width: 20px;
   height: 20px;
-  fill: var(--primary-text-color);
+  fill: $cl-primary-text;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
-  fill: var(--primary-white-color);
+  fill: $cl-primary-white;
 }
 
 .social-icons-link:hover,
 .social-icons-link:focus {
-  background-color: var(--accent-cl);
+  background-color: $cl-accent;
 }
 
 .team {
-  background-color: var(--secondary-bg-cl);
+  background-color: $cl-secondary;
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
@@ -78,7 +78,7 @@
 
 .team-item {
   padding-bottom: 30px;
-  background: #ffffff;
+  background: $cl-primary-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -93,7 +93,7 @@
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-  color: var(--secondary-text-color);
+  color: $cl-secondary-text;
 }
 
 .team-title {
@@ -105,7 +105,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
-  color: var(--secondary-text-color);
+  color: $cl-secondary-text;
 }
 
 .item-title {
@@ -117,7 +117,7 @@
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
-  color: var(--primary-text-color);
+  color: $cl-primary-text;
 }
 
 .position {

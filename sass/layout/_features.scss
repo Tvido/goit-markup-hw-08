@@ -20,7 +20,7 @@
 
   margin-bottom: 30px;
 
-  background-color: #f5f4fa;
+  background-color: $cl-secondary;
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,13 +56,13 @@
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
+  color: $cl-secondary-text;
 }
 
 .featuters .discription {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-text-color);
+  color: v$cl-primary-text;
 }
 
 .features-item:not(:last-child) {

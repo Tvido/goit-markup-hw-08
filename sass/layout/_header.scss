@@ -14,7 +14,7 @@
   line-height: 1.19;
   text-decoration: none;
   font-style: normal;
-  color: var(--header-logo-cl);
+  color: $cl-header-logo;
 }
 
 .web {
@@ -38,7 +38,7 @@
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: $cl-secondary-text;
   text-decoration: none;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -46,13 +46,13 @@
 
 .site-nav .site-nav-link:hover,
 .site-nav .site-nav-link:focus {
-  color: var(--accent-cl);
+  color: $cl-accent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .site-nav-link.current {
-  color: var(--accent-cl);
+  color: $cl-accent;
 }
 
 .site-nav-item {
@@ -71,7 +71,7 @@
 
   margin-top: 28px;
 
-  background: var(--accent-cl);
+  background: $cl-accent;
   border-radius: 2px;
   transition-duration: 250ms;
 }
@@ -86,7 +86,7 @@
 .contacts-item-svg {
   width: 16px;
   height: 12px;
-  fill: var(--primary-text-color);
+  fill: $cl-primary-text;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -109,22 +109,22 @@
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: $cl-primary-text;
   text-decoration: none;
 }
 
 .contacts .contacts-item:hover,
 .contacts .contacts-item:focus {
-  color: var(--accent-cl);
+  color: $cl-accent;
 }
 
 .contacts-item:hover .contacts-item-svg,
 .contacts-item:focus .contacts-item-svg {
-  fill: var(--accent-cl);
+  fill: $cl-accent;
 }
 .contacts-item:hover,
 .contacts-item:focus {
-  border-color: var(--accent-cl);
+  border-color: $cl-accent;
 }
 
 .contacts-item-svg {

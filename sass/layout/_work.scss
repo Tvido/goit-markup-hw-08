@@ -26,7 +26,7 @@
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-  color: var(--secondary-text-color);
+  color: $cl-secondary-text;
 }
 
 .work-overlay {
@@ -45,6 +45,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding: 27px 80px;
-  color: var(--primary-white-color);
+  color: $cl-primary-white;
   background: rgba(47, 48, 58, 0.8);
 }
