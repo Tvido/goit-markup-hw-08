@@ -649,8 +649,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-icons-link-svg {
-  width: 44px;
+.clients-icons-svg {
   height: 45px;
   fill: #757575;
   -webkit-transition: 250ms;
