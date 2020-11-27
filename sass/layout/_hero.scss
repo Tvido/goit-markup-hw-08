@@ -14,15 +14,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
 
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: $cl-primary-white;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  &-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: $cl-primary-white;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }

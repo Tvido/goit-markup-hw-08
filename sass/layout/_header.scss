@@ -81,14 +81,14 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 32px;
   padding-bottom: 32px;
-}
 
-.contacts-item-svg {
-  width: 16px;
-  height: 12px;
-  fill: $cl-primary-text;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &-svg {
+    width: 16px;
+    height: 12px;
+    fill: $cl-primary-text;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 /*============ контакти хедер ============*/
@@ -96,6 +96,14 @@
   display: flex;
   margin-left: auto;
   list-style: none;
+
+  &-item-svg {
+    display: inline-block;
+    content: "";
+    height: 16px;
+    margin-right: 10px;
+    align-items: center;
+  }
 }
 
 .contacts .site-nav-item + .site-nav-item {
@@ -125,12 +133,4 @@
 .contacts-item:hover,
 .contacts-item:focus {
   border-color: $cl-accent;
-}
-
-.contacts-item-svg {
-  display: inline-block;
-  content: "";
-  height: 16px;
-  margin-right: 10px;
-  align-items: center;
 }

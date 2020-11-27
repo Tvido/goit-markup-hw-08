@@ -1,47 +1,83 @@
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  font-style: normal;
-  color: $cl-primary-white;
-}
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer-address {
-  font-style: normal;
+  &-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    font-style: normal;
+    color: $cl-primary-white;
+  }
+
+  &-address {
+    font-style: normal;
+  }
+
+  &-social {
+    margin-right: 93px;
+    padding-top: 72px;
+    padding-bottom: 60px;
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $cl-primary-white;
+    }
+
+    &-svg {
+      width: 20px;
+      height: 20px;
+      fill: $cl-primary-white;
+    }
+  }
+
+  &-address .link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $cl-primary-white;
+    text-decoration: none;
+  }
+
+  &-address .mapp {
+    font-family: inherit;
+    color: $cl-primary-white;
+    text-decoration: none;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-address .contact {
+    display: block;
+    margin-top: 9px;
+    color: $cl-address;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .mapp {
   display: inline-block;
   margin-top: 20px;
-}
-
-.footer-address .link {
-  font-size: 14px;
-  line-height: 1.71;
-  color: $cl-primary-white;
-  text-decoration: none;
-}
-
-.footer-address .mapp {
-  font-family: inherit;
-  color: $cl-primary-white;
-  text-decoration: none;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-address .contact {
-  display: block;
-  margin-top: 9px;
-  color: $cl-address;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address :hover,
@@ -51,56 +87,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer {
-  margin-right: 70px;
-}
-
-.footer-social {
-  margin-right: 93px;
-  padding-top: 72px;
-  padding-bottom: 60px;
-}
-
-.footer-social-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $cl-primary-white;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-}
-
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  /* background-color: var(--primary-text-color); */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-}
-
-.footer-social-svg {
-  width: 20px;
-  height: 20px;
-  fill: $cl-primary-white;
-}
-
-.footer-social-link {
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -110,42 +98,41 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* *********subscribe
-******************** */
+// subscribe
 .subscribe {
   padding-top: 72px;
   padding-bottom: 60px;
-}
 
-.subscribe-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $cl-primary-white;
-}
+  &-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $cl-primary-white;
+  }
 
-.subscribe-mail {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
+  &-mail {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
 
-  outline: none;
+    outline: none;
 
-  color: $cl-primary-white;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: $cl-dark-bg;
-  margin-right: 12px;
-}
+    color: $cl-primary-white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $cl-dark-bg;
+    margin-right: 12px;
+  }
 
-.subscribe-svg {
-  fill: $cl-primary-white;
+  &-svg {
+    fill: $cl-primary-white;
+  }
 }
 
 .subscribe .subscribe-mail:hover,

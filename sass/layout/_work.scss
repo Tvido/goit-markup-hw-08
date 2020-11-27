@@ -1,10 +1,39 @@
 .work {
   padding-bottom: 94px;
-}
 
-.work-item {
-  margin-right: 30px;
-  position: relative;
+  &-item {
+    margin-right: 30px;
+    position: relative;
+  }
+
+  &-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    color: $cl-secondary-text;
+  }
+
+  &-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  &-discription {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.145;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 27px 80px;
+    color: $cl-primary-white;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
 
 .work-item:nth-child(3n) {
@@ -18,33 +47,4 @@
 
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.work-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  color: $cl-secondary-text;
-}
-
-.work-overlay {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.work-discription {
-  display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.145;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  padding: 27px 80px;
-  color: $cl-primary-white;
-  background: rgba(47, 48, 58, 0.8);
 }
