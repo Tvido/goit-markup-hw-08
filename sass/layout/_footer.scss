@@ -14,10 +14,13 @@
 
   &-address {
     font-style: normal;
+    width: 220px;
+    margin-right: 85px;
   }
 
   &-social {
-    margin-right: 93px;
+    margin-right: 90px;
+    width: 210px;
     padding-top: 72px;
     padding-bottom: 60px;
 
@@ -29,6 +32,13 @@
       height: 44px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 50%;
+      transition: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-link:hover,
+    &-link:focus {
+      background-color: $cl-accent;
       transition: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -48,6 +58,10 @@
       width: 20px;
       height: 20px;
       fill: $cl-primary-white;
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 10px;
     }
   }
 
@@ -73,6 +87,13 @@
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  &-address :hover,
+  &-address :focus {
+    color: $cl-accent;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .mapp {
@@ -80,26 +101,8 @@
   margin-top: 20px;
 }
 
-.footer-address :hover,
-.footer-address :focus {
-  color: $cl-accent;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: $cl-accent;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-// subscribe
 .subscribe {
+  width: 570px;
   padding-top: 72px;
   padding-bottom: 60px;
 
@@ -115,7 +118,7 @@
   }
 
   &-mail {
-    width: 358px;
+    width: 350px;
     height: 50px;
     padding-left: 16px;
 
@@ -130,14 +133,14 @@
     margin-right: 12px;
   }
 
+  &-mail:hover,
+  &-mail:focus {
+    border: 1px solid $cl-accent;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   &-svg {
     fill: $cl-primary-white;
   }
-}
-
-.subscribe .subscribe-mail:hover,
-.subscribe .subscribe-mail:focus {
-  border: 1px solid $cl-accent;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -124,6 +124,37 @@
     display: block;
     margin-bottom: 28px;
   }
+
+  &-field .modal-input:hover,
+  &-field .modal-input:focus {
+    border: 1px solid $cl-accent;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+
+  &-field:hover .modal-icon,
+  &-field:focus .modal-icon {
+    fill: $cl-accent;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+
+  &-field .field:hover,
+  &-field .field:focus {
+    border: 1px solid $cl-accent;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+
+  &-field:hover .field,
+  &-field:focus .field {
+    fill: $cl-accent;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .field {
@@ -153,43 +184,12 @@
   }
 }
 
-.form-field .modal-input:hover,
-.form-field .modal-input:focus {
-  border: 1px solid $cl-accent;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-
-.form-field:hover .modal-icon,
-.form-field:focus .modal-icon {
-  fill: $cl-accent;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-
-.form-field .field:hover,
-.form-field .field:focus {
-  border: 1px solid $cl-accent;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-
 .field:hover .modal-icon,
 .field:focus .modal-icon {
   fill: $cl-accent;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-}
-
-.form-field:hover .field,
-.form-field:focus .field {
-  fill: $cl-accent;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit {
