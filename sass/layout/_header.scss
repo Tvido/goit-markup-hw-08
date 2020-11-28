@@ -42,18 +42,29 @@
   text-decoration: none;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $cl-accent;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &.current {
+    color: $cl-accent;
+  }
 }
 
-.site-nav .site-nav-link:hover,
-.site-nav .site-nav-link:focus {
-  color: $cl-accent;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+// .site-nav .site-nav-link:hover,
+// .site-nav .site-nav-link:focus {
+//   color: $cl-accent;
+//   transition: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
-.site-nav .site-nav-link.current {
-  color: $cl-accent;
-}
+// .site-nav .site-nav-link.current {
+//   color: $cl-accent;
+// }
 
 .site-nav-item {
   position: relative;
@@ -76,21 +87,6 @@
   transition-duration: 250ms;
 }
 
-.contacts-item {
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  &-svg {
-    width: 16px;
-    height: 12px;
-    fill: $cl-primary-text;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
 /*============ контакти хедер ============*/
 .contacts {
   display: flex;
@@ -103,6 +99,26 @@
     height: 16px;
     margin-right: 10px;
     align-items: center;
+  }
+
+  &-item {
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &-svg {
+      display: inline-block;
+      content: "";
+      width: 16px;
+      // height: 12px;
+      margin-right: 10px;
+      align-items: center;
+
+      fill: $cl-primary-text;
+      transition: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 

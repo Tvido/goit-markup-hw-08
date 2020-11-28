@@ -962,8 +962,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .site-nav-link:hover,
-.site-nav .site-nav-link:focus {
+.site-nav .site-nav-link:hover, .site-nav .site-nav-link:focus {
   color: #2196f3;
   -webkit-transition: 250ms;
   transition: 250ms;
@@ -997,25 +996,6 @@ img {
           transition-duration: 250ms;
 }
 
-.contacts-item {
-  -webkit-transition: 250ms;
-  transition: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.contacts-item-svg {
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-  -webkit-transition: 250ms;
-  transition: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /*============ контакти хедер ============*/
 .contacts {
   display: -webkit-box;
@@ -1033,6 +1013,30 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contacts-item {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-item-svg {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  margin-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #757575;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .site-nav-item + .site-nav-item {
