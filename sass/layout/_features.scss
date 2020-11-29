@@ -7,9 +7,11 @@
   }
 
   &-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
   }
 
   &-title {
