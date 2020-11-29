@@ -1,6 +1,10 @@
 .work {
   padding-bottom: 94px;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &-item {
     margin-right: 30px;
     position: relative;
@@ -44,7 +48,6 @@
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-
   margin-top: 0;
   margin-bottom: 0;
 }

@@ -1246,6 +1246,12 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 767px) {
+  .work {
+    display: none;
+  }
+}
+
 .work-item {
   margin-right: 30px;
   position: relative;
