@@ -485,7 +485,6 @@ img {
 
 .cargo-choise {
   margin-top: 0;
-  margin-bottom: 50px;
 }
 
 .cargo-item {
@@ -551,14 +550,6 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cargo-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.cargo-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
 .cargo-item-title {
   padding-left: 24px;
   font-weight: 700;
@@ -594,6 +585,44 @@ img {
   padding: 20px 24px;
   background-color: #ffffff;
   z-index: 2;
+}
+
+@media screen and (min-width: 320px) {
+  .cargo {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cargo {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cargo-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cargo {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cargo-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .clients {
@@ -692,12 +721,6 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-}
-
-@media screen and (min-width: 480px) {
-  .features-list {
-    max-width: 480px;
-  }
 }
 
 .features-title {
@@ -1251,7 +1274,7 @@ img {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .work {
     display: none;
   }
