@@ -1,6 +1,6 @@
 .features {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     .features-list {
@@ -17,6 +17,12 @@
   @media screen and (min-width: 768px) {
     .features-item:nth-child(2n + 1) {
       margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .features-item:nth-child(-n + 2) {
+      margin-bottom: 30px;
     }
   }
 

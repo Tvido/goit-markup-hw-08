@@ -15,12 +15,11 @@
   &-address {
     font-style: normal;
     width: 220px;
-    margin-right: 85px;
   }
 
   &-social {
-    margin-right: 90px;
-    width: 210px;
+    // margin-right: 90px;
+    // width: 210px;
     padding-top: 72px;
     padding-bottom: 60px;
 
@@ -143,4 +142,30 @@
   &-svg {
     fill: $cl-primary-white;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .wide {
+    display: block;
+    text-align: center;
+  }
+  .footer-logo {
+    display: block;
+    text-align: center;
+  }
+  .footer-address {
+    width: 450px;
+    display: block;
+    text-align: center;
+  }
+  .subscribe {
+    width: 450px;
+  }
+
+  .subscribe-mail {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
 }
