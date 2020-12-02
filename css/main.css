@@ -1217,12 +1217,41 @@ img {
 }
 
 .team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
   margin-top: 0;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team .team-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team .team-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team .team-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team .team-item {
+    width: 270px;
+  }
 }
 
 .team-item {
@@ -1245,9 +1274,10 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .team-list-item:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .team-item {
+    display: block;
+    max-width: 354px;
   }
 }
 
@@ -1279,14 +1309,22 @@ img {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
 }
 
-.work-item:not(:last-child) {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .work .work-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work .work-item {
+    position: relative;
+  }
 }
 
 .work-title {

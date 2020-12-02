@@ -1,13 +1,20 @@
 .work {
   padding-bottom: 94px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 
-  &-item:not(:last-child) {
-    // margin-right: 30px;
-    position: relative;
+  @media screen and (min-width: 1200px) {
+    .work-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .work-item {
+      position: relative;
+    }
   }
 
   &-title {
@@ -39,16 +46,3 @@
     background: rgba(47, 48, 58, 0.8);
   }
 }
-
-// .work-item:nth-child(3n) {
-//   margin-right: 0;
-// }
-
-// .work .list {
-// display: flex;
-// text-align: center;
-// flex-wrap: wrap;
-
-//   margin-top: 0;
-//   margin-bottom: 0;
-// }
