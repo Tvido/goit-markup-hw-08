@@ -12,11 +12,9 @@
   }
 
   &-list {
-    @media screen and (min-width: 480px) {
-      display: flex;
-    }
     // display: flex;
     // justify-content: center;
+    // display: flex;
     justify-content: space-between;
     margin-top: 50px;
   }
