@@ -668,16 +668,23 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients-icons-link {
     width: 210px;
     height: 90px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients-icons-item {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-icons-link {
+    width: 210px;
+    height: 90px;
   }
 }
 
@@ -685,6 +692,12 @@ img {
   .clients-icons-link {
     width: 170px;
     height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-icons-item {
+    margin-bottom: 30px;
   }
 }
 
