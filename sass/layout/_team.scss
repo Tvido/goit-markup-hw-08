@@ -10,11 +10,11 @@
   }
 
   &-icons {
-    display: flex;
+    // display: flex;
     justify-content: center;
 
     &-link {
-      display: flex;
+      // display: flex;
       justify-content: center;
       align-items: center;
       width: 44px;
@@ -58,9 +58,9 @@
 
 .team {
   background-color: $cl-secondary;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  // text-align: center;
 
   &-list {
     // display: flex;
@@ -89,7 +89,7 @@
     text-align: center;
     color: $cl-secondary-text;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
