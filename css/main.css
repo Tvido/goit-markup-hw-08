@@ -1192,6 +1192,9 @@ img {
 }
 
 .social-icons-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1217,8 +1220,10 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icons-item:not(:last-child) {
-  margin-right: 30px;
+.social-icons-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .social-icons-link:hover .social-icons-svg,

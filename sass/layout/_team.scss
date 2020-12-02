@@ -15,7 +15,7 @@
     justify-content: center;
 
     &-link {
-      // display: flex;
+      display: flex;
       justify-content: center;
       align-items: center;
       width: 44px;
@@ -34,8 +34,8 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &-item:not(:last-child) {
-      margin-right: 30px;
+    &-item {
+      display: flex;
     }
   }
 }
@@ -59,9 +59,7 @@
   &-list {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
-
     list-style: none;
     margin-top: 0;
     text-align: center;
