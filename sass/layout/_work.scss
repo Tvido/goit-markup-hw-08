@@ -5,8 +5,8 @@
     display: none;
   }
 
-  &-item {
-    margin-right: 30px;
+  &-item:not(:last-child) {
+    // margin-right: 30px;
     position: relative;
   }
 
@@ -40,15 +40,15 @@
   }
 }
 
-.work-item:nth-child(3n) {
-  margin-right: 0;
-}
+// .work-item:nth-child(3n) {
+//   margin-right: 0;
+// }
 
-.work .list {
-  // display: flex;
-  // text-align: center;
-  // flex-wrap: wrap;
+// .work .list {
+// display: flex;
+// text-align: center;
+// flex-wrap: wrap;
 
-  margin-top: 0;
-  margin-bottom: 0;
-}
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }
