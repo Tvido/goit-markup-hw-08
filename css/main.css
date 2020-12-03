@@ -115,7 +115,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   text-decoration: none;
@@ -685,61 +684,8 @@ img {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .features .features-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .features .features-item,
-  .features .features-title::before {
-    max-width: 354px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features .features-item:nth-child(2n + 1) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features .features-item:nth-child(-n + 2) {
-    margin-bottom: 30px;
-  }
-}
-
 .features-list {
   list-style: none;
-}
-
-@media screen and (max-width: 767px) {
-  .features .features-list {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features .features-item,
-  .features .features-title::before {
-    max-width: 270px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features .features-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features .features-item:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .features-title {
@@ -753,14 +699,10 @@ img {
   color: #212121;
 }
 
-.features-item {
-  margin-bottom: 30px;
-}
-
 .features-title::before {
   display: block;
   content: "";
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-size: contain;
   border-radius: 4px;
@@ -769,6 +711,12 @@ img {
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features-item {
+    width: 50%;
+  }
 }
 
 .icon-antenna::before {
@@ -793,6 +741,10 @@ img {
   color: #757575;
 }
 
+.drk-bg {
+  width: 100%;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -802,12 +754,13 @@ img {
   display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
   font-style: normal;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -933,6 +886,7 @@ img {
   width: 100%;
   height: 50px;
   padding-left: 16px;
+  margin-bottom: 20px;
   outline: none;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -968,7 +922,7 @@ img {
     text-align: center;
   }
   .subscribe {
-    width: 450px;
+    width: 100%;
   }
   .subscribe-mail {
     margin-bottom: 20px;
