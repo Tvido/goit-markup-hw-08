@@ -715,7 +715,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .features-item {
-    width: 50%;
+    max-width: 50%;
   }
 }
 

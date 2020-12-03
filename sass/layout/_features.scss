@@ -85,15 +85,9 @@
 
 @media screen and (min-width: 768px) {
   .features-item {
-    width: 50%;
+    max-width: 50%;
   }
 }
-
-// @media screen and (min-width: 768px) {
-//   .features-list {
-//     margin: -15px;
-//   }
-// }
 
 .icon-antenna::before {
   background-image: url("../images/features/antenna.svg");
