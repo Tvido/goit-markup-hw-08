@@ -1,12 +1,12 @@
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  text-align: center;
 
   &-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
-    display: flex;
     text-align: center;
     color: $cl-secondary-text;
     margin-bottom: 50px;
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
+    min-width: 170px;
     height: 90px;
 
     margin-bottom: 30px;
@@ -33,37 +33,50 @@
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  &-list {
+    align-content: center;
+  }
+
+  &-icons-item {
+    display: block;
+    align-content: center;
+  }
+
+  &-icons-item {
+    margin-right: 30px;
+  }
 }
 
-.clients-icons-item:nth-child(2n + 1) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients-icons-link {
+    width: 210px;
+    height: 90px;
+  }
 }
 
-// @media screen and (max-width: 479px) {
-//   .clients-icons-item:nth-child(2n + 1) {
-//     margin-right: 0px;
-//   }
-// }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-icons-link {
+    min-width: 226px;
+    margin-right: 0px;
+  }
 
-// @media screen and (min-width: 768px) {
-//   .clients-icons-link {
-//     width: 210px;
-//     height: 90px;
-//   }
-// }
+  .clients-icons-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
 
-// @media screen and (min-width: 1200px) {
-//   .clients-icons-link {
-//     width: 170px;
-//     height: 90px;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .clients-icons-link {
+    max-width: 170px;
+  }
+}
 
-// @media screen and (min-width: 768px) {
-//   .clients-icons-item {
-//     margin-bottom: 30px;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .clients-icons-item:nth-child(6n) {
+    margin-right: 0px;
+  }
+}
 
 .clients-icons-link:hover .clients-icons-svg,
 .clients-icons-link:focus .clients-icons-svg {

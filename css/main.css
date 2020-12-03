@@ -1,9 +1,12 @@
 @charset "UTF-8";
 .drk-bg {
   background-color: #2f303a;
+  text-align: center;
+  width: 100%;
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -619,15 +622,13 @@ img {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  text-align: center;
 }
 
 .clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
   color: #212121;
   margin-bottom: 50px;
@@ -643,7 +644,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
+  min-width: 170px;
   height: 90px;
   margin-bottom: 30px;
   border: 1px solid #afb1b8;
@@ -665,8 +666,48 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-icons-item:nth-child(2n + 1) {
+.clients-list {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.clients-icons-item {
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.clients-icons-item {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-icons-link {
+    width: 210px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-icons-link {
+    min-width: 226px;
+    margin-right: 0px;
+  }
+  .clients-icons-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-icons-link {
+    max-width: 170px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-icons-item:nth-child(6n) {
+    margin-right: 0px;
+  }
 }
 
 .clients-icons-link:hover .clients-icons-svg,
@@ -923,7 +964,6 @@ img {
   .footer-logo {
     display: block;
     text-align: center;
-    margin-bottom: 20px;
   }
   .footer {
     width: 450px;
@@ -937,7 +977,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer,
   .footer-address,
   .footer-social {
