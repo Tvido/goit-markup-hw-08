@@ -1,7 +1,3 @@
-.drk-bg {
-  width: 100%;
-}
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -165,9 +161,9 @@
     margin-bottom: 20px;
   }
 
-  .footer-address {
+  .footer {
     width: 450px;
-    display: block;
+    // display: block;
     text-align: center;
   }
   .subscribe {
@@ -176,5 +172,26 @@
 
   .subscribe-mail {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer,
+  .footer-address,
+  .footer-social {
+    display: inline-block;
+    text-align: center;
+    max-width: 240px;
+    margin-right: 0;
+  }
+
+  .subscribe {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .subscribe-mail {
+    width: 450px;
   }
 }
