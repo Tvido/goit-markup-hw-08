@@ -713,9 +713,22 @@ img {
   background-position: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features-item {
-    max-width: 50%;
+    max-width: 354px;
+  }
+  .features-item:nth-child(odd) {
+    margin-right: 30px;
   }
 }
 
