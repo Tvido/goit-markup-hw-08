@@ -6,23 +6,20 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
+    display: flex;
     text-align: center;
     color: $cl-secondary-text;
     margin-bottom: 50px;
-  }
-
-  &-list {
-    justify-content: space-between;
-    margin-top: 50px;
   }
 
   &-icons-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    // width: 210px;
-    // height: 90px;
-    /* background-color: var(--primary-text-color); */
+    width: 210px;
+    height: 90px;
+
+    margin-bottom: 30px;
     border: 1px solid #afb1b8;
     box-sizing: border-box;
     border-radius: 4px;
@@ -31,59 +28,42 @@
   }
 
   &-icons-svg {
-    height: 45px;
+    height: 44px;
     fill: $cl-primary-text;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
+.clients-icons-item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
 // @media screen and (max-width: 479px) {
-//   .clients-icons-item {
-//     max-width: 210px;
+//   .clients-icons-item:nth-child(2n + 1) {
+//     margin-right: 0px;
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .clients-icons-link {
+//     width: 210px;
 //     height: 90px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .clients-icons-link {
+//     width: 170px;
+//     height: 90px;
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .clients-icons-item {
 //     margin-bottom: 30px;
 //   }
 // }
-
-// @media screen and (max-width: 479px) {
-//   .clients-icons-link {
-//     max-width: 210px;
-//     height: 90px;
-//   }
-// }
-
-@media screen and (max-width: 767px) {
-  .clients-icons-link {
-    width: 210px;
-    height: 90px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .clients-icons-item {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients-icons-link {
-    width: 210px;
-    height: 90px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-icons-link {
-    width: 170px;
-    height: 90px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients-icons-item {
-    margin-bottom: 30px;
-  }
-}
 
 .clients-icons-link:hover .clients-icons-svg,
 .clients-icons-link:focus .clients-icons-svg {
@@ -92,9 +72,4 @@
 .clients-icons-link:hover,
 .clients-icons-link:focus {
   border-color: $cl-accent;
-}
-
-.clients-icons-item:not(:last-child) {
-  // margin-right: 30px;
-  // margin-bottom: 60px;
 }

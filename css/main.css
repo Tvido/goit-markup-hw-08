@@ -4,11 +4,16 @@
 }
 
 .container {
-  /* outline: 3px solid red; */
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -27,10 +32,6 @@
   .container {
     max-width: 1200px;
   }
-}
-
-.centered {
-  text-align: center;
 }
 
 body {
@@ -89,12 +90,6 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-
-.wide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .btn {
@@ -631,16 +626,12 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   color: #212121;
   margin-bottom: 50px;
-}
-
-.clients-list {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 50px;
 }
 
 .clients-icons-link {
@@ -653,7 +644,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* background-color: var(--primary-text-color); */
+  width: 210px;
+  height: 90px;
+  margin-bottom: 30px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -665,7 +658,7 @@ img {
 }
 
 .clients-icons-svg {
-  height: 45px;
+  height: 44px;
   fill: #757575;
   -webkit-transition: 250ms;
   transition: 250ms;
@@ -673,37 +666,8 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
-  .clients-icons-link {
-    width: 210px;
-    height: 90px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .clients-icons-item {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients-icons-link {
-    width: 210px;
-    height: 90px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-icons-link {
-    width: 170px;
-    height: 90px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients-icons-item {
-    margin-bottom: 30px;
-  }
+.clients-icons-item:nth-child(2n + 1) {
+  margin-right: 30px;
 }
 
 .clients-icons-link:hover .clients-icons-svg,
@@ -835,6 +799,7 @@ img {
 }
 
 .footer-logo {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -842,16 +807,14 @@ img {
   text-decoration: none;
   font-style: normal;
   color: #ffffff;
+  text-align: center;
 }
 
 .footer-address {
+  display: block;
+  text-align: center;
+  list-style: none;
   font-style: normal;
-  width: 220px;
-}
-
-.footer-social {
-  padding-top: 72px;
-  padding-bottom: 60px;
 }
 
 .footer-social-link {
@@ -883,7 +846,8 @@ img {
 }
 
 .footer-social-title {
-  margin-top: 0;
+  display: block;
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -897,6 +861,10 @@ img {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+}
+
+.footer-social-item {
+  list-style: none;
 }
 
 .footer-social-item:not(:last-child) {
@@ -941,12 +909,12 @@ img {
 
 .mapp {
   display: inline-block;
-  margin-top: 20px;
 }
 
 .subscribe {
-  width: 570px;
-  padding-top: 72px;
+  display: block;
+  text-align: center;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -962,7 +930,7 @@ img {
 }
 
 .subscribe-mail {
-  width: 350px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   outline: none;
@@ -974,7 +942,6 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
-  margin-right: 12px;
 }
 
 .subscribe-mail:hover, .subscribe-mail:focus {
@@ -989,14 +956,11 @@ img {
   fill: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  .wide {
-    display: block;
-    text-align: center;
-  }
+@media screen and (min-width: 480px) {
   .footer-logo {
     display: block;
     text-align: center;
+    margin-bottom: 20px;
   }
   .footer-address {
     width: 450px;
