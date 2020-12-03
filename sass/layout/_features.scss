@@ -3,6 +3,8 @@
   padding-bottom: 30px;
 
   &-list {
+    padding-left: auto;
+    padding-right: auto;
     list-style: none;
   }
 
@@ -47,6 +49,22 @@
   }
   .features-item:nth-child(odd) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: flex;
+  }
+
+  .features-item {
+    margin-right: 30px;
+
+    max-width: 270px;
+  }
+
+  .features-item:last-child {
+    margin-right: 0px;
   }
 }
 

@@ -37,18 +37,19 @@
   &-list {
     display: flex;
     flex-wrap: wrap;
-
-    align-content: center;
+    // align-content: center;
   }
 
   &-icons-item {
     display: block;
     align-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  &-icons-item {
-    margin-right: 30px;
-  }
+  // &-icons-item {
+  //   // margin-right: 30px;
+  // }
 }
 
 @media screen and (min-width: 768px) {
