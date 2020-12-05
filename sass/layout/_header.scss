@@ -233,6 +233,10 @@
   // margin-bottom: 5px;
 }
 
+.header-nav-link:last-child {
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
