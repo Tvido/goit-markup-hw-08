@@ -5,6 +5,7 @@
   &-choise {
     margin-top: 0;
     margin-bottom: 50px;
+    text-align: center;
   }
 
   &-list {
@@ -92,7 +93,7 @@
 
 .cargo-item:hover .cargo-thumb-discription,
 .cargo-item:focus .cargo-thumb-discription {
-  top: 0;
+  top: 0px;
   opacity: 1;
   transform: translateY(0%);
   transition: 250ms;
@@ -112,6 +113,9 @@
   }
   .cargo-item:nth-child(odd) {
     margin-right: 30px;
+  }
+  .cargo-choice {
+    text-align: center;
   }
 }
 
