@@ -22,8 +22,14 @@
 }
 
 .site-nav {
-  // display: flex;
-  margin-left: 93px;
+  display: none;
+}
+
+@media screen and (min-width: 768) {
+  .site-nav {
+    display: flex;
+    // margin-left: 93px;
+  }
 }
 
 .site-nav .site-nav-item + .site-nav-item {
@@ -89,7 +95,7 @@
 
 /*============ контакти хедер ============*/
 .contacts {
-  // display: flex;
+  display: flex;
   margin-left: auto;
   list-style: none;
 
