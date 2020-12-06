@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .drk-bg {
   background-color: #2f303a;
-  text-align: center;
   width: 100%;
 }
 
@@ -501,10 +500,16 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 768px) {
+  .cargo .cargo-choise {
+    text-align: center;
+  }
+}
+
 .cargo-choise {
   margin-top: 0;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 .cargo-list {
@@ -847,24 +852,13 @@ img {
   text-decoration: none;
   font-style: normal;
   color: #ffffff;
-  text-align: center;
   margin-bottom: 20px;
 }
 
 .footer-address {
   display: block;
-  text-align: center;
   list-style: none;
   font-style: normal;
-}
-
-.footer-social {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer-social-link {
@@ -968,8 +962,18 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe .subscribe-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+  }
+}
+
 .subscribe-title {
   margin-top: 0;
+  padding-left: 10px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1012,6 +1016,11 @@ img {
     display: block;
     text-align: center;
   }
+  .footer-social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .footer {
     width: 450px;
     text-align: center;
@@ -1026,12 +1035,19 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer,
-  .footer-address,
   .footer-social {
     display: inline-block;
     text-align: center;
     max-width: 240px;
     margin-right: 0;
+  }
+  .footer-social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-cotainer {
+    text-align: center;
   }
   .footer {
     margin: 0;
@@ -1063,6 +1079,11 @@ img {
     display: flex;
     max-width: 600px;
   }
+  .footer-cotainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .footer {
     width: 300px;
   }
@@ -1076,7 +1097,13 @@ img {
   .subscribe-mail {
     width: 60%;
   }
-  .footer-cotainer {
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-title {
+    text-align: start;
+  }
+  .footer-social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
