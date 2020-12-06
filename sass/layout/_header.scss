@@ -254,8 +254,9 @@
 }
 
 .mobile-menu {
-  transform: translateY(-200%);
+  text-align: center;
 
+  transform: translateY(-200%);
   position: absolute;
   left: 0;
   right: 0;
@@ -282,8 +283,8 @@
 }
 
 .mobile-site-nav {
-  display: block;
-  text-align: center;
+  list-style: none;
+  display: inline-block;
   padding-top: 60px;
 }
 

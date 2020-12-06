@@ -1396,6 +1396,7 @@ img {
 }
 
 .mobile-menu {
+  text-align: center;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
   position: absolute;
@@ -1426,8 +1427,8 @@ img {
 }
 
 .mobile-site-nav {
-  display: block;
-  text-align: center;
+  list-style: none;
+  display: inline-block;
   padding-top: 60px;
 }
 
