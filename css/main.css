@@ -232,8 +232,8 @@ img {
 
 .modal {
   position: relative;
-  height: 581px;
-  width: 528px;
+  min-height: 100%;
+  min-width: 100%;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -492,6 +492,12 @@ img {
 
 .user-policy-link {
   margin-left: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .checkbox-text {
+    font-size: 11px;
+  }
 }
 
 .cargo {
