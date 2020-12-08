@@ -574,7 +574,7 @@ img {
   left: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  max-width: 370px;
+  max-width: 100%;
   min-height: 292px;
   padding: 60px 24px;
   background: rgba(33, 150, 243, 0.9);
